@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice
 class GlobalExceptionHandler {
 
-    private static Logger logger = LoggerFactory.getLogger(PayPalService.class);
+    private Logger logger = LoggerFactory.getLogger(PayPalService.class);
 
     public static final String DEFAULT_ERROR_VIEW = "error";
     @ExceptionHandler(value = Exception.class)

@@ -46,21 +46,8 @@ public class HolidayUtil {
         }
 
         String result = response.body().string();
-        System.out.println(result);
-        System.out.println(result);
+
         return result.equals("0") ? false : true;
     }
 
-    public static void main(String[] args) throws IOException {
-        System.out.println(isHoliday("20180501"));
-        System.out.println(isHoliday("20180420"));
-        System.out.println(isHoliday("20180401"));
-
-        System.out.println(isStockTime("0914"));
-        System.out.println(isStockTime("0939"));
-        System.out.println(isStockTime("1131"));
-        System.out.println(isStockTime("1200"));
-        System.out.println(isStockTime("1501"));
-        System.out.println(isStockTime("1401"));
-    }
 }
