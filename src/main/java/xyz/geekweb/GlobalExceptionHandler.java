@@ -1,13 +1,13 @@
 package xyz.geekweb;
 
-import javax.servlet.http.HttpServletRequest;
-
-import xyz.geekweb.paypal.PayPalService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
+import xyz.geekweb.paypal.PayPalService;
+
+import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 class GlobalExceptionHandler {

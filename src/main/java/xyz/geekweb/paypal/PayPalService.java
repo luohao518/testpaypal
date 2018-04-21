@@ -1,8 +1,5 @@
 package xyz.geekweb.paypal;
 
-import xyz.geekweb.paypal.config.PayPalConfig;
-import xyz.geekweb.paypal.config.PayPalPaymentIntentEnum;
-import xyz.geekweb.paypal.config.PayPalPaymentMethodEnum;
 import com.paypal.api.payments.*;
 import com.paypal.base.rest.APIContext;
 import com.paypal.base.rest.PayPalRESTException;
@@ -10,6 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import xyz.geekweb.paypal.config.PayPalConfig;
+import xyz.geekweb.paypal.config.PayPalPaymentIntentEnum;
+import xyz.geekweb.paypal.config.PayPalPaymentMethodEnum;
 
 import java.util.ArrayList;
 import java.util.HashMap;
