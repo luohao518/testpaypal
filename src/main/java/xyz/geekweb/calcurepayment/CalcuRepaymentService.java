@@ -15,6 +15,7 @@ public class CalcuRepaymentService {
 
 	private Formatter f = new Formatter(System.out);
 
+
 	/**
 	 * calcuRepayment
 	 * @param name
