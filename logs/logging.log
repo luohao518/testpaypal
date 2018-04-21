@@ -1,0 +1,796 @@
+2018-04-21 14:26:25.544  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Starting GeekWebApplication on HaodeMacBook-Pro.local with PID 17390 (/Users/lhao/lhao/work/testpaypal/target/classes started by lhao in /Users/lhao/lhao/work/testpaypal)
+2018-04-21 14:26:25.544 DEBUG 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-21 14:26:25.544  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : No active profile set, falling back to default profiles: default
+2018-04-21 14:26:25.547  INFO 17390 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ac87e56: startup date [Sat Apr 21 14:26:25 CST 2018]; root of context hierarchy
+2018-04-21 14:26:25.968  INFO 17390 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84cc4a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-21 14:26:26.032  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-21 14:26:26.032  INFO 17390 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-21 14:26:26.032  INFO 17390 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-21 14:26:26.039  INFO 17390 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-21 14:26:26.040  INFO 17390 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 493 ms
+2018-04-21 14:26:26.233  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-21 14:26:26.235  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-21 14:26:26.235  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-21 14:26:26.235  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-21 14:26:26.236  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-21 14:26:26.236  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-21 14:26:26.236  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-21 14:26:26.236  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-21 14:26:26.267  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-04-21 14:26:26.271  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-04-21 14:26:26.281  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:26:26.319  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:26:26.387  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:26:26.464  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ac87e56: startup date [Sat Apr 21 14:26:25 CST 2018]; root of context hierarchy
+2018-04-21 14:26:26.475  WARN 17390 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-21 14:26:26.485  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[GET]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.showList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.ui.Model)
+2018-04-21 14:26:26.486  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[POST]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.queryList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+2018-04-21 14:26:26.486  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public xyz.geekweb.calcurepayment.model.RepaymentScheduleData<java.util.List<xyz.geekweb.calcurepayment.model.Detail>> xyz.geekweb.calcurepayment.JsonController.repayment(javax.servlet.http.HttpSession)
+2018-04-21 14:26:26.488  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.index()
+2018-04-21 14:26:26.488  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/pay],methods=[POST]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:26:26.488  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/cancel],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.cancelPay()
+2018-04-21 14:26:26.489  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/success],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-21 14:26:26.489  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[GET]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.readersBooks(org.springframework.ui.Model)
+2018-04-21 14:26:26.490  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[POST]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.addToReadingList(xyz.geekweb.readinglist.Book)
+2018-04-21 14:26:26.491  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:26:26.491  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:26:26.507  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:26:26.507  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:26:26.520  INFO 17390 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-21 14:26:26.546  INFO 17390 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-21 14:26:26.680  INFO 17390 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-21 14:26:26.688  INFO 17390 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-04-21 14:26:26.693  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:26:26.694  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:26:26.694  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:26:26.739  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-21 14:26:26.740  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-21 14:26:26.747  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-21 14:26:26.763  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-21 14:26:26.764  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Started GeekWebApplication in 1.423 seconds (JVM running for 154.364)
+2018-04-21 14:26:26.771  INFO 17390 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-04-21 14:26:40.313  INFO 17390 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-21 14:26:40.313  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-21 14:26:40.317  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-04-21 14:26:40.362  INFO 17390 --- [http-nio-8000-exec-1] x.g.c.CalcuRepaymentController           : do Get()
+2018-04-21 14:26:55.023  INFO 17390 --- [http-nio-8000-exec-5] x.g.c.CalcuRepaymentController           : do POST()
+2018-04-21 14:26:55.023 DEBUG 17390 --- [http-nio-8000-exec-5] x.g.c.CalcuRepaymentController           : formData= name:qq totalAmount:1000 interestRate:10 repaymentMonthly:100
+2018-04-21 14:28:19.439  INFO 17390 --- [Thread-26] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3ac87e56: startup date [Sat Apr 21 14:26:25 CST 2018]; root of context hierarchy
+2018-04-21 14:28:19.442  INFO 17390 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-21 14:28:19.442  INFO 17390 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-21 14:28:19.443  INFO 17390 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:28:19.448  WARN 17390 --- [Thread-26] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2018-04-21 14:28:19.449  INFO 17390 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2018-04-21 14:28:19.452  INFO 17390 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2018-04-21 14:28:19.914  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Starting GeekWebApplication on HaodeMacBook-Pro.local with PID 17390 (/Users/lhao/lhao/work/testpaypal/target/classes started by lhao in /Users/lhao/lhao/work/testpaypal)
+2018-04-21 14:28:19.914 DEBUG 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-21 14:28:19.915  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : No active profile set, falling back to default profiles: default
+2018-04-21 14:28:19.917  INFO 17390 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7144762d: startup date [Sat Apr 21 14:28:19 CST 2018]; root of context hierarchy
+2018-04-21 14:28:20.331  INFO 17390 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84cc4a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-21 14:28:20.389  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-21 14:28:20.390  INFO 17390 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-21 14:28:20.390  INFO 17390 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-21 14:28:20.397  INFO 17390 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-21 14:28:20.398  INFO 17390 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 481 ms
+2018-04-21 14:28:20.570  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-21 14:28:20.571  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-21 14:28:20.571  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-21 14:28:20.571  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-21 14:28:20.571  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-21 14:28:20.572  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-21 14:28:20.572  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-21 14:28:20.572  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-21 14:28:20.601  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2018-04-21 14:28:20.609  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2018-04-21 14:28:20.615  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:28:20.651  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:28:20.705  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:28:20.767  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7144762d: startup date [Sat Apr 21 14:28:19 CST 2018]; root of context hierarchy
+2018-04-21 14:28:20.775  WARN 17390 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-21 14:28:20.780  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[GET]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.showList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.ui.Model)
+2018-04-21 14:28:20.780  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[POST]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.queryList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+2018-04-21 14:28:20.780  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public xyz.geekweb.calcurepayment.model.RepaymentScheduleData<java.util.List<xyz.geekweb.calcurepayment.model.Detail>> xyz.geekweb.calcurepayment.JsonController.repayment(javax.servlet.http.HttpSession)
+2018-04-21 14:28:20.781  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.index()
+2018-04-21 14:28:20.782  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/pay],methods=[POST]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:28:20.782  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/cancel],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.cancelPay()
+2018-04-21 14:28:20.782  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/success],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-21 14:28:20.782  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[GET]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.readersBooks(org.springframework.ui.Model)
+2018-04-21 14:28:20.783  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[POST]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.addToReadingList(xyz.geekweb.readinglist.Book)
+2018-04-21 14:28:20.784  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:28:20.784  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:28:20.796  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:28:20.796  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:28:20.805  INFO 17390 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-21 14:28:20.827  INFO 17390 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-21 14:28:20.936  INFO 17390 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-21 14:28:20.942  INFO 17390 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-04-21 14:28:20.944  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:28:20.944  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:28:20.944  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:28:20.970  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-21 14:28:20.971  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-21 14:28:20.975  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-21 14:28:20.984  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-21 14:28:20.985  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Started GeekWebApplication in 1.094 seconds (JVM running for 268.583)
+2018-04-21 14:28:20.989  INFO 17390 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-04-21 14:28:24.524  INFO 17390 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-21 14:28:24.524  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-21 14:28:24.528  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-04-21 14:28:24.537  INFO 17390 --- [http-nio-8000-exec-1] x.g.c.CalcuRepaymentController           : do Get()
+2018-04-21 14:28:27.322 DEBUG 17390 --- [http-nio-8000-exec-2] xyz.geekweb.paypal.PaymentController     : do index()
+2018-04-21 14:29:06.754  INFO 17390 --- [Thread-34] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7144762d: startup date [Sat Apr 21 14:28:19 CST 2018]; root of context hierarchy
+2018-04-21 14:29:06.756  INFO 17390 --- [Thread-34] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-21 14:29:06.756  INFO 17390 --- [Thread-34] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-21 14:29:06.757  INFO 17390 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:29:06.760  WARN 17390 --- [Thread-34] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2018-04-21 14:29:06.761  INFO 17390 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2018-04-21 14:29:06.763  INFO 17390 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2018-04-21 14:29:07.207  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Starting GeekWebApplication on HaodeMacBook-Pro.local with PID 17390 (/Users/lhao/lhao/work/testpaypal/target/classes started by lhao in /Users/lhao/lhao/work/testpaypal)
+2018-04-21 14:29:07.207 DEBUG 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-21 14:29:07.208  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : No active profile set, falling back to default profiles: default
+2018-04-21 14:29:07.213  INFO 17390 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1671e4cc: startup date [Sat Apr 21 14:29:07 CST 2018]; root of context hierarchy
+2018-04-21 14:29:07.789  INFO 17390 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84cc4a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-21 14:29:07.861  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-21 14:29:07.863  INFO 17390 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-21 14:29:07.863  INFO 17390 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-21 14:29:07.871  INFO 17390 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-21 14:29:07.871  INFO 17390 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 658 ms
+2018-04-21 14:29:08.044  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-21 14:29:08.045  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-21 14:29:08.073  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2018-04-21 14:29:08.076  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2018-04-21 14:29:08.081  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:29:08.112  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:29:08.169  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:29:08.230  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1671e4cc: startup date [Sat Apr 21 14:29:07 CST 2018]; root of context hierarchy
+2018-04-21 14:29:08.239  WARN 17390 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-21 14:29:08.242  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[GET]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.showList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.ui.Model)
+2018-04-21 14:29:08.242  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[POST]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.queryList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+2018-04-21 14:29:08.243  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public xyz.geekweb.calcurepayment.model.RepaymentScheduleData<java.util.List<xyz.geekweb.calcurepayment.model.Detail>> xyz.geekweb.calcurepayment.JsonController.repayment(javax.servlet.http.HttpSession)
+2018-04-21 14:29:08.244  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.index()
+2018-04-21 14:29:08.244  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/pay],methods=[POST]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:29:08.244  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/cancel],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.cancelPay()
+2018-04-21 14:29:08.244  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/success],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-21 14:29:08.244  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[GET]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.readersBooks(org.springframework.ui.Model)
+2018-04-21 14:29:08.245  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[POST]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.addToReadingList(xyz.geekweb.readinglist.Book)
+2018-04-21 14:29:08.246  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:29:08.246  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:29:08.259  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:29:08.259  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:29:08.269  INFO 17390 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-21 14:29:08.290  INFO 17390 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-21 14:29:08.428  INFO 17390 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-21 14:29:08.434  INFO 17390 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-04-21 14:29:08.436  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:29:08.436  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:29:08.437  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:29:08.467  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-21 14:29:08.468  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-21 14:29:08.473  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-21 14:29:08.482  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-21 14:29:08.484  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Started GeekWebApplication in 1.326 seconds (JVM running for 316.082)
+2018-04-21 14:29:08.490  INFO 17390 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-04-21 14:29:10.429  INFO 17390 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-21 14:29:10.429  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-21 14:29:10.433  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-04-21 14:29:10.436 DEBUG 17390 --- [http-nio-8000-exec-1] xyz.geekweb.paypal.PaymentController     : do index()
+2018-04-21 14:29:14.954 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PaymentController     : do pay() start
+2018-04-21 14:29:14.954 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:29:17.059 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PaymentController     : do pay() end
+2018-04-21 14:30:08.365  INFO 17390 --- [Thread-42] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1671e4cc: startup date [Sat Apr 21 14:29:07 CST 2018]; root of context hierarchy
+2018-04-21 14:30:08.369  INFO 17390 --- [Thread-42] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-21 14:30:08.374  INFO 17390 --- [Thread-42] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-21 14:30:08.376  INFO 17390 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:30:08.382  WARN 17390 --- [Thread-42] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2018-04-21 14:30:08.383  INFO 17390 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2018-04-21 14:30:08.386  INFO 17390 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2018-04-21 14:30:08.831  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Starting GeekWebApplication on HaodeMacBook-Pro.local with PID 17390 (/Users/lhao/lhao/work/testpaypal/target/classes started by lhao in /Users/lhao/lhao/work/testpaypal)
+2018-04-21 14:30:08.832 DEBUG 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-21 14:30:08.832  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : No active profile set, falling back to default profiles: default
+2018-04-21 14:30:08.835  INFO 17390 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d97fc94: startup date [Sat Apr 21 14:30:08 CST 2018]; root of context hierarchy
+2018-04-21 14:30:09.377  INFO 17390 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84cc4a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-21 14:30:09.433  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-21 14:30:09.433  INFO 17390 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-21 14:30:09.434  INFO 17390 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-21 14:30:09.441  INFO 17390 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-21 14:30:09.442  INFO 17390 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 607 ms
+2018-04-21 14:30:09.602  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-21 14:30:09.603  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-21 14:30:09.630  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2018-04-21 14:30:09.632  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2018-04-21 14:30:09.637  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:30:09.666  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:30:09.727  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:30:09.809  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d97fc94: startup date [Sat Apr 21 14:30:08 CST 2018]; root of context hierarchy
+2018-04-21 14:30:09.820  WARN 17390 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-21 14:30:09.828  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[GET]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.showList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.ui.Model)
+2018-04-21 14:30:09.828  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[POST]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.queryList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+2018-04-21 14:30:09.829  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public xyz.geekweb.calcurepayment.model.RepaymentScheduleData<java.util.List<xyz.geekweb.calcurepayment.model.Detail>> xyz.geekweb.calcurepayment.JsonController.repayment(javax.servlet.http.HttpSession)
+2018-04-21 14:30:09.830  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.index()
+2018-04-21 14:30:09.830  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/pay],methods=[POST]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:30:09.830  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/cancel],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.cancelPay()
+2018-04-21 14:30:09.831  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/success],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-21 14:30:09.831  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[GET]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.readersBooks(org.springframework.ui.Model)
+2018-04-21 14:30:09.831  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[POST]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.addToReadingList(xyz.geekweb.readinglist.Book)
+2018-04-21 14:30:09.835  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:30:09.835  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:30:09.853  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:30:09.853  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:30:09.868  INFO 17390 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-21 14:30:09.898  INFO 17390 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-21 14:30:10.036  INFO 17390 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-21 14:30:10.046  INFO 17390 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-04-21 14:30:10.049  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:30:10.049  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:30:10.049  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:30:10.096  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-21 14:30:10.097  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-21 14:30:10.106  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-21 14:30:10.123  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-21 14:30:10.125  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Started GeekWebApplication in 1.322 seconds (JVM running for 377.725)
+2018-04-21 14:30:10.131  INFO 17390 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-04-21 14:30:15.226  INFO 17390 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-21 14:30:15.226  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-21 14:30:15.230  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-04-21 14:30:15.233 DEBUG 17390 --- [http-nio-8000-exec-1] xyz.geekweb.paypal.PaymentController     : do index()
+2018-04-21 14:30:16.122 DEBUG 17390 --- [http-nio-8000-exec-2] xyz.geekweb.paypal.PaymentController     : do pay() start
+2018-04-21 14:30:16.122 DEBUG 17390 --- [http-nio-8000-exec-2] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:30:17.539 DEBUG 17390 --- [http-nio-8000-exec-2] xyz.geekweb.paypal.PaymentController     : do pay() end
+2018-04-21 14:30:38.919 DEBUG 17390 --- [http-nio-8000-exec-4] xyz.geekweb.paypal.PaymentController     : do pay() start
+2018-04-21 14:30:38.923 DEBUG 17390 --- [http-nio-8000-exec-4] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:30:40.273 DEBUG 17390 --- [http-nio-8000-exec-4] xyz.geekweb.paypal.PaymentController     : do pay() end
+2018-04-21 14:30:55.794 DEBUG 17390 --- [http-nio-8000-exec-6] xyz.geekweb.paypal.PaymentController     : do cancel
+2018-04-21 14:30:55.802 ERROR 17390 --- [http-nio-8000-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8000-exec-6] Exception processing template "cancel": Error resolving template "cancel", template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "cancel", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) [spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) [spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) [spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) [spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-21 14:30:55.805 ERROR 17390 --- [http-nio-8000-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "cancel", template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "cancel", template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:870) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) ~[spring-boot-actuator-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-21 14:30:55.818 ERROR 17390 --- [http-nio-8000-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8000-exec-6] Exception processing template "error": An error happened during template parsing (template: "class path resource [templates/error.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:472) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 37 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 10)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	... 39 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'message' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 58 common frames omitted
+
+2018-04-21 14:30:55.819 ERROR 17390 --- [http-nio-8000-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'message' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:472) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+
+2018-04-21 14:30:55.820 ERROR 17390 --- [http-nio-8000-exec-6] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:472) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316) ~[tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_151]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.29.jar:8.5.29]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_151]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	... 26 common frames omitted
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 37 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "exception.message" (template: "error" - line 10, col 10)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	... 39 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'message' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334) ~[spring-expression-5.0.5.RELEASE.jar:5.0.5.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 58 common frames omitted
+
+2018-04-21 14:32:02.431  INFO 17390 --- [Thread-50] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2d97fc94: startup date [Sat Apr 21 14:30:08 CST 2018]; root of context hierarchy
+2018-04-21 14:32:02.434  INFO 17390 --- [Thread-50] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-21 14:32:02.434  INFO 17390 --- [Thread-50] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-21 14:32:02.434  INFO 17390 --- [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:32:02.439  WARN 17390 --- [Thread-50] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2018-04-21 14:32:02.439  INFO 17390 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2018-04-21 14:32:02.442  INFO 17390 --- [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2018-04-21 14:32:02.782  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Starting GeekWebApplication on HaodeMacBook-Pro.local with PID 17390 (/Users/lhao/lhao/work/testpaypal/target/classes started by lhao in /Users/lhao/lhao/work/testpaypal)
+2018-04-21 14:32:02.782 DEBUG 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-21 14:32:02.782  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : No active profile set, falling back to default profiles: default
+2018-04-21 14:32:02.785  INFO 17390 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aff74cc: startup date [Sat Apr 21 14:32:02 CST 2018]; root of context hierarchy
+2018-04-21 14:32:03.352  INFO 17390 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84cc4a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-21 14:32:03.431  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+2018-04-21 14:32:03.433  INFO 17390 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-21 14:32:03.433  INFO 17390 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-21 14:32:03.441  INFO 17390 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-21 14:32:03.442  INFO 17390 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 657 ms
+2018-04-21 14:32:03.701  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-04-21 14:32:03.701  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2018-04-21 14:32:03.701  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-21 14:32:03.701  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-21 14:32:03.701  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-21 14:32:03.702  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-21 14:32:03.702  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-04-21 14:32:03.702  INFO 17390 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-04-21 14:32:03.743  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2018-04-21 14:32:03.747  INFO 17390 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2018-04-21 14:32:03.754  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:32:03.808  INFO 17390 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:32:03.902  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:32:04.012  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aff74cc: startup date [Sat Apr 21 14:32:02 CST 2018]; root of context hierarchy
+2018-04-21 14:32:04.025  WARN 17390 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-04-21 14:32:04.034  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[GET]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.showList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.ui.Model)
+2018-04-21 14:32:04.034  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/calcuRepayment],methods=[POST]}" onto public java.lang.String xyz.geekweb.calcurepayment.CalcuRepaymentController.queryList(xyz.geekweb.calcurepayment.model.FormData,org.springframework.validation.BindingResult,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+2018-04-21 14:32:04.034  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download]}" onto public xyz.geekweb.calcurepayment.model.RepaymentScheduleData<java.util.List<xyz.geekweb.calcurepayment.model.Detail>> xyz.geekweb.calcurepayment.JsonController.repayment(javax.servlet.http.HttpSession)
+2018-04-21 14:32:04.038  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.index()
+2018-04-21 14:32:04.038  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/pay],methods=[POST]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:32:04.038  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/cancel],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.cancelPay()
+2018-04-21 14:32:04.039  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/paypal/success],methods=[GET]}" onto public java.lang.String xyz.geekweb.paypal.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-21 14:32:04.040  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[GET]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.readersBooks(org.springframework.ui.Model)
+2018-04-21 14:32:04.040  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList],methods=[POST]}" onto public java.lang.String xyz.geekweb.readinglist.ReadingListController.addToReadingList(xyz.geekweb.readinglist.Book)
+2018-04-21 14:32:04.042  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-21 14:32:04.042  INFO 17390 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:32:04.061  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:32:04.061  INFO 17390 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-21 14:32:04.075  INFO 17390 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-21 14:32:04.102  INFO 17390 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-04-21 14:32:04.287  INFO 17390 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-04-21 14:32:04.296  INFO 17390 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-04-21 14:32:04.300  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:32:04.300  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-04-21 14:32:04.300  INFO 17390 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-21 14:32:04.356  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-21 14:32:04.357  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-04-21 14:32:04.365  INFO 17390 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-04-21 14:32:04.380  INFO 17390 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+2018-04-21 14:32:04.382  INFO 17390 --- [restartedMain] xyz.geekweb.GeekWebApplication           : Started GeekWebApplication in 1.624 seconds (JVM running for 491.987)
+2018-04-21 14:32:04.387  INFO 17390 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-04-21 14:32:12.120  INFO 17390 --- [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-21 14:32:12.120  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-21 14:32:12.125  INFO 17390 --- [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-04-21 14:32:12.128 DEBUG 17390 --- [http-nio-8000-exec-1] xyz.geekweb.paypal.PaymentController     : do index()
+2018-04-21 14:32:13.052 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PaymentController     : do pay() start
+2018-04-21 14:32:13.052 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:32:14.575 DEBUG 17390 --- [http-nio-8000-exec-3] xyz.geekweb.paypal.PaymentController     : do pay() end
+2018-04-21 14:32:40.379 DEBUG 17390 --- [http-nio-8000-exec-4] xyz.geekweb.paypal.PaymentController     : do cancel
+2018-04-21 14:32:49.535 DEBUG 17390 --- [http-nio-8000-exec-5] xyz.geekweb.paypal.PaymentController     : do index()
+2018-04-21 14:32:50.744 DEBUG 17390 --- [http-nio-8000-exec-6] xyz.geekweb.paypal.PaymentController     : do pay() start
+2018-04-21 14:32:50.745 DEBUG 17390 --- [http-nio-8000-exec-6] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:32:52.063 DEBUG 17390 --- [http-nio-8000-exec-6] xyz.geekweb.paypal.PaymentController     : do pay() end
+2018-04-21 14:33:47.970 DEBUG 17390 --- [http-nio-8000-exec-7] xyz.geekweb.paypal.PaymentController     : do success
+2018-04-21 14:33:47.970 DEBUG 17390 --- [http-nio-8000-exec-7] xyz.geekweb.paypal.PayPalService         : executePayment():[PAY-6C659121603781454LLNNWEY],[W4D8526XL5N86]
+2018-04-21 14:33:47.971 DEBUG 17390 --- [http-nio-8000-exec-7] xyz.geekweb.paypal.PayPalService         : getApiContext()
+2018-04-21 14:33:50.648 DEBUG 17390 --- [http-nio-8000-exec-7] xyz.geekweb.paypal.PaymentController     : do execute finished!!![{
+  "id": "PAY-6C659121603781454LLNNWEY",
+  "intent": "sale",
+  "payer": {
+    "payment_method": "paypal",
+    "status": "VERIFIED",
+    "payer_info": {
+      "email": "luohao518-facilitator@yeah.net",
+      "first_name": "test",
+      "last_name": "facilitator",
+      "payer_id": "W4D8526XL5N86",
+      "country_code": "C2",
+      "shipping_address": {
+        "recipient_name": "test facilitator",
+        "line1": "NO 1 Nan Jin Road",
+        "city": "Shanghai",
+        "country_code": "C2",
+        "postal_code": "200000",
+        "state": "Shanghai"
+      }
+    }
+  },
+  "cart": "3ER107170C141253R",
+  "transactions": [
+    {
+      "related_resources": [
+        {
+          "sale": {
+            "id": "3LY47653FS6052315",
+            "amount": {
+              "currency": "USD",
+              "total": "50.00",
+              "details": {
+                "subtotal": "50.00"
+              }
+            },
+            "payment_mode": "INSTANT_TRANSFER",
+            "state": "completed",
+            "protection_eligibility": "ELIGIBLE",
+            "protection_eligibility_type": "ITEM_NOT_RECEIVED_ELIGIBLE,UNAUTHORIZED_PAYMENT_ELIGIBLE",
+            "transaction_fee": {
+              "currency": "USD",
+              "value": "2.25"
+            },
+            "parent_payment": "PAY-6C659121603781454LLNNWEY",
+            "create_time": "2018-04-21T06:33:49Z",
+            "update_time": "2018-04-21T06:33:49Z",
+            "links": [
+              {
+                "href": "https://api.sandbox.paypal.com/v1/payments/sale/3LY47653FS6052315",
+                "rel": "self",
+                "method": "GET"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v1/payments/sale/3LY47653FS6052315/refund",
+                "rel": "refund",
+                "method": "POST"
+              },
+              {
+                "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-6C659121603781454LLNNWEY",
+                "rel": "parent_payment",
+                "method": "GET"
+              }
+            ]
+          }
+        }
+      ],
+      "amount": {
+        "currency": "USD",
+        "total": "50.00",
+        "details": {}
+      },
+      "payee": {
+        "email": "contact-facilitator@china-synergy.org",
+        "merchant_id": "KB5KKMFF7M2MJ"
+      },
+      "description": "payment description",
+      "item_list": {
+        "shipping_address": {
+          "recipient_name": "facilitator test",
+          "line1": "NO 1 Nan Jin Road",
+          "city": "Shanghai",
+          "country_code": "C2",
+          "postal_code": "200000",
+          "state": "Shanghai"
+        }
+      }
+    }
+  ],
+  "state": "approved",
+  "create_time": "2018-04-21T06:33:50Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-6C659121603781454LLNNWEY",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}]
+2018-04-21 14:53:26.652  INFO 17390 --- [Thread-65] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@aff74cc: startup date [Sat Apr 21 14:32:02 CST 2018]; root of context hierarchy
+2018-04-21 14:53:26.656  INFO 17390 --- [Thread-65] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-04-21 14:53:26.656  INFO 17390 --- [Thread-65] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-04-21 14:53:26.657  INFO 17390 --- [Thread-65] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-04-21 14:53:26.665  WARN 17390 --- [Thread-65] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2018-04-21 14:53:26.665  INFO 17390 --- [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2018-04-21 14:53:26.677  INFO 17390 --- [Thread-65] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
