@@ -1,4 +1,4 @@
-package com.testpaypal.demo;
+package com.geekweb.paypal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,5 +1,5 @@
-2018-04-20 17:14:27.005  INFO 5960 --- [main] com.testpaypal.demo.DemoApplication      : Starting DemoApplication on LAPTOP-CT29F0O2 with PID 5960 (D:\testpaypal\target\classes started by lhao in D:\testpaypal)
-2018-04-20 17:14:27.009  INFO 5960 --- [main] com.testpaypal.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2018-04-20 17:14:27.005  INFO 5960 --- [main] DemoApplication      : Starting DemoApplication on LAPTOP-CT29F0O2 with PID 5960 (D:\testpaypal\target\classes started by lhao in D:\testpaypal)
+2018-04-20 17:14:27.009  INFO 5960 --- [main] DemoApplication      : No active profile set, falling back to default profiles: default
 2018-04-20 17:14:27.474  INFO 5960 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25359ed8: startup date [Fri Apr 20 17:14:27 CST 2018]; root of context hierarchy
 2018-04-20 17:14:29.689  INFO 5960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8088 (http)
 2018-04-20 17:14:29.770  INFO 5960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
@@ -12,10 +12,10 @@
 2018-04-20 17:14:30.228  INFO 5960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
 2018-04-20 17:14:30.228  INFO 5960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
 2018-04-20 17:14:30.673  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25359ed8: startup date [Fri Apr 20 17:14:27 CST 2018]; root of context hierarchy
-2018-04-20 17:14:30.756  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.index()
-2018-04-20 17:14:30.760  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay],methods=[POST]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.pay(javax.servlet.http.HttpServletRequest)
-2018-04-20 17:14:30.761  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/cancel],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.cancelPay()
-2018-04-20 17:14:30.761  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/success],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-20 17:14:30.756  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String PaymentController.index()
+2018-04-20 17:14:30.760  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay],methods=[POST]}" onto public java.lang.String PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-20 17:14:30.761  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/cancel],methods=[GET]}" onto public java.lang.String PaymentController.cancelPay()
+2018-04-20 17:14:30.761  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/success],methods=[GET]}" onto public java.lang.String PaymentController.successPay(java.lang.String,java.lang.String)
 2018-04-20 17:14:30.764  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-20 17:14:30.765  INFO 5960 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-20 17:14:30.802  INFO 5960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -23,13 +23,13 @@
 2018-04-20 17:14:30.845  INFO 5960 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-04-20 17:14:31.500  INFO 5960 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2018-04-20 17:14:31.567  INFO 5960 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8088 (http)
-2018-04-20 17:14:31.574  INFO 5960 --- [main] com.testpaypal.demo.DemoApplication      : Started DemoApplication in 5.225 seconds (JVM running for 7.102)
+2018-04-20 17:14:31.574  INFO 5960 --- [main] DemoApplication      : Started DemoApplication in 5.225 seconds (JVM running for 7.102)
 2018-04-20 17:18:48.483  INFO 5960 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-04-20 17:18:48.483  INFO 5960 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-04-20 17:18:48.529  INFO 5960 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
-2018-04-20 17:21:53.854  INFO 12264 --- [main] com.testpaypal.demo.DemoApplication      : Starting DemoApplication on LAPTOP-CT29F0O2 with PID 12264 (D:\testpaypal\target\classes started by lhao in D:\testpaypal)
-2018-04-20 17:21:53.857 DEBUG 12264 --- [main] com.testpaypal.demo.DemoApplication      : Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
-2018-04-20 17:21:53.858  INFO 12264 --- [main] com.testpaypal.demo.DemoApplication      : No active profile set, falling back to default profiles: default
+2018-04-20 17:21:53.854  INFO 12264 --- [main] DemoApplication      : Starting DemoApplication on LAPTOP-CT29F0O2 with PID 12264 (D:\testpaypal\target\classes started by lhao in D:\testpaypal)
+2018-04-20 17:21:53.857 DEBUG 12264 --- [main] DemoApplication      : Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-20 17:21:53.858  INFO 12264 --- [main] DemoApplication      : No active profile set, falling back to default profiles: default
 2018-04-20 17:21:54.277  INFO 12264 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25359ed8: startup date [Fri Apr 20 17:21:54 CST 2018]; root of context hierarchy
 2018-04-20 17:21:55.964  INFO 12264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8088 (http)
 2018-04-20 17:21:56.004  INFO 12264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
@@ -42,10 +42,10 @@
 2018-04-20 17:21:56.391  INFO 12264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
 2018-04-20 17:21:56.391  INFO 12264 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
 2018-04-20 17:21:56.865  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25359ed8: startup date [Fri Apr 20 17:21:54 CST 2018]; root of context hierarchy
-2018-04-20 17:21:56.945  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.index()
-2018-04-20 17:21:56.949  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay],methods=[POST]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.pay(javax.servlet.http.HttpServletRequest)
-2018-04-20 17:21:56.950  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/success],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.successPay(java.lang.String,java.lang.String)
-2018-04-20 17:21:56.950  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/cancel],methods=[GET]}" onto public java.lang.String com.testpaypal.demo.controller.PaymentController.cancelPay()
+2018-04-20 17:21:56.945  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String PaymentController.index()
+2018-04-20 17:21:56.949  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay],methods=[POST]}" onto public java.lang.String PaymentController.pay(javax.servlet.http.HttpServletRequest)
+2018-04-20 17:21:56.950  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/success],methods=[GET]}" onto public java.lang.String PaymentController.successPay(java.lang.String,java.lang.String)
+2018-04-20 17:21:56.950  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pay/cancel],methods=[GET]}" onto public java.lang.String PaymentController.cancelPay()
 2018-04-20 17:21:56.953  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-04-20 17:21:56.954  INFO 12264 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-04-20 17:21:57.012  INFO 12264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
@@ -53,7 +53,7 @@
 2018-04-20 17:21:57.062  INFO 12264 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
 2018-04-20 17:21:57.758  INFO 12264 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
 2018-04-20 17:21:57.830  INFO 12264 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8088 (http)
-2018-04-20 17:21:57.837  INFO 12264 --- [main] com.testpaypal.demo.DemoApplication      : Started DemoApplication in 4.586 seconds (JVM running for 6.548)
+2018-04-20 17:21:57.837  INFO 12264 --- [main] DemoApplication      : Started DemoApplication in 4.586 seconds (JVM running for 6.548)
 2018-04-20 17:23:14.532  INFO 12264 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-04-20 17:23:14.533  INFO 12264 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-04-20 17:23:14.578  INFO 12264 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
